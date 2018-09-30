@@ -21,18 +21,43 @@
 		android:backgroundTint="@android:color/holo_blue_light"
 		android:layout_marginBottom="10dp"
 	/>
-	<TextView
-		android:id="@+id/textTip"
-		android:layout_height="wrap_content"
-		android:layout_width="wrap_content"
-		android:textSize="16dp"
-		android:text="Tip: "/>
-	<TextView
-		android:id="@+id/textTotal"
-		android:layout_height="wrap_content"
-		android:layout_width="wrap_content"
-		android:textSize="16dp"
-		android:text="Total: "/>
 
+	<LinearLayout
+		android:id="@+id/tipLine"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal">
+
+		<TextView
+			android:id="@+id/textTip"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:textSize="16dp"
+			android:text="Tip: "/>
+		<TextView
+			android:id="@+id/textValueTip"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:textSize="16dp"/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/totalLine"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal">
+
+		<TextView
+			android:id="@+id/textTotal"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:textSize="16dp"
+			android:text="Total: "/>
+		<TextView
+			android:id="@+id/textValueTotal"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:textSize="16dp"/>
+	</LinearLayout>
 	
 </LinearLayout>
